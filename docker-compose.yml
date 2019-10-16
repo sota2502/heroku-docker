@@ -9,11 +9,11 @@ services:
       MYSQL_ROOT_PASSWORD: SdXbrfuypaVy
   app:
     container_name: app
-    image: sota2502/heroku-app
+    image: sota2502/heroku-app:latest
     build:
       context: .
       dockerfile: ./dockerfiles/Dockerfile
-    command: /bin/bash entrypoint.sh
+    # command: /bin/bash entrypoint.sh
     # command: /bin/bash
     tty: true
     volumes:
